@@ -53,7 +53,7 @@ Set variable to slave, or own memory
 
 Example
 
-* D100=30 // Set D0 to 30
+* D100=30 // Set D100 to 30
 * D0..2=1,2 // Set D0=1, D1=2
 
 ![Example.png](Example.png)
