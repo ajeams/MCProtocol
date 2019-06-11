@@ -39,9 +39,10 @@ Get variable from slave, or own memory
 * {DeviceCode}{Addess}
 * {DeviceCode}{Addess}..{Count}
 
-ex.1) D0 // Get D0 variable
+Example
 
-ex.2) D0..2 // Get D0, D1 variable
+* D0 // Get D0 variable
+* D0..2 // Get D0, D1 variable
 
 ### Set Command
 
@@ -50,7 +51,9 @@ Set variable to slave, or own memory
 * {DeviceCode}{Addess}={Value}
 * {DeviceCode}{Addess}..{Count}={Value0},{Value1},{Value2}....{Value n}
 
-ex.1) D100=30 // Set D0 to 30
-ex.2) D0..2=1,2 // Set D0=1, D1=2
+Example
+
+* D100=30 // Set D0 to 30
+* D0..2=1,2 // Set D0=1, D1=2
 
 ![Example.png](Example.png)
