@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE6352C8-8F2C-461B-9B04-B58485A36CC9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MCProtocol.Test</RootNamespace>
+    <AssemblyName>MCProtocol.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Giselle.Commons">
+      <HintPath>..\Libs\Giselle.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BitNumbers\BitBoolean.cs" />
+    <Compile Include="BitNumbers\BitBooleanArray.cs" />
+    <Compile Include="BitNumbers\BitByte.cs" />
+    <Compile Include="BitNumbers\BitByteArray.cs" />
+    <Compile Include="BitNumbers\BitHelper.cs" />
+    <Compile Include="BitNumbers\BitInteger.cs" />
+    <Compile Include="BitNumbers\BitIntegerArray.cs" />
+    <Compile Include="BitNumbers\BitLong.cs" />
+    <Compile Include="BitNumbers\BitLongArray.cs" />
+    <Compile Include="BitNumbers\BitNumber.cs" />
+    <Compile Include="BitNumbers\BitNumber2DWords.cs" />
+    <Compile Include="BitNumbers\BitNumber2Words.cs" />
+    <Compile Include="BitNumbers\BitNumber4Bytes.cs" />
+    <Compile Include="BitNumbers\BitNumberArray.cs" />
+    <Compile Include="BitNumbers\BitNumberByte.cs" />
+    <Compile Include="BitNumbers\BitNumberDWord.cs" />
+    <Compile Include="BitNumbers\BitNumberList.cs" />
+    <Compile Include="BitNumbers\BitNumberQWord.cs" />
+    <Compile Include="BitNumbers\BitNumberWord.cs" />
+    <Compile Include="BitNumbers\BitPrecision.cs" />
+    <Compile Include="BitNumbers\BitPrecisionArray.cs" />
+    <Compile Include="BitNumbers\BitSByte.cs" />
+    <Compile Include="BitNumbers\BitSByteArray.cs" />
+    <Compile Include="BitNumbers\BitShort.cs" />
+    <Compile Include="BitNumbers\BitShortArray.cs" />
+    <Compile Include="BitNumbers\BitUInteger.cs" />
+    <Compile Include="BitNumbers\BitUIntegerArray.cs" />
+    <Compile Include="BitNumbers\BitULong.cs" />
+    <Compile Include="BitNumbers\BitULongArray.cs" />
+    <Compile Include="BitNumbers\BitUShort.cs" />
+    <Compile Include="BitNumbers\BitUShortArray.cs" />
+    <Compile Include="DrawingUtils.cs" />
+    <Compile Include="PlaceLevel.cs" />
+    <Compile Include="PlaceDirection.cs" />
+    <Compile Include="Command.cs" />
+    <Compile Include="CommandGet.cs" />
+    <Compile Include="CommandParser.cs" />
+    <Compile Include="CommunicationDataViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommunicationLog.cs" />
+    <Compile Include="CommSetupGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlInvalidatedException.cs" />
+    <Compile Include="CommSetupGroupBoxMaster.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LabeledControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LabeledTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MCCommSettings.cs" />
+    <Compile Include="MCCommSettingsMaster.cs" />
+    <Compile Include="MCCommSettingsSlave.cs" />
+    <Compile Include="MCCommunicationLogEventArgs.cs" />
+    <Compile Include="MCErrorCodes.cs" />
+    <Compile Include="MCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCFormMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCFormSlave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCLogEvent.cs" />
+    <Compile Include="MCLogger.cs" />
+    <Compile Include="MCMemoryException.cs" />
+    <Compile Include="MCMemoryMap.cs" />
+    <Compile Include="MCMemoryPage.cs" />
+    <Compile Include="MCMessageLogEventArgs.cs" />
+    <Compile Include="MCProtocolException.cs" />
+    <Compile Include="MCSlaveConnection.cs" />
+    <Compile Include="MCSlaveServer.cs" />
+    <Compile Include="OptimizedControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OptimizedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptimizedGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SelectModeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCObjectMaster.cs" />
+    <Compile Include="MCObject.cs" />
+    <Compile Include="CommandSet.cs" />
+    <Compile Include="MCObjectSlave.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CommSetupGroupBoxSlave.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SimpleEnumerator.cs" />
+    <Compile Include="StreamWrapper.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MCProtocol\MCProtocol.csproj">
+      <Project>{c8f1b872-c152-45b8-862e-d4cd7ee2c31a}</Project>
+      <Name>MCProtocol</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

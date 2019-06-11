@@ -1,0 +1,4 @@
+C:\Users\seil.ahn\Desktop\업무\CSharp\MCTester\trunk\MCTester.Test\obj\Debug\MCTester.Test.csprojResolveAssemblyReference.cache
+C:\Users\seil.ahn\Desktop\업무\CSharp\MCTester\trunk\MCTester.Test\obj\Debug\MCTester.Test.Properties.Resources.resources
+C:\Users\seil.ahn\Desktop\업무\CSharp\MCTester\trunk\MCTester.Test\obj\Debug\MCTester.Test.csproj.GenerateResource.Cache
+C:\Users\seil.ahn\Desktop\업무\CSharp\MCTester\trunk\MCTester.Test\obj\Debug\MCTester.pdb

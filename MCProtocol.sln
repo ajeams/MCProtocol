@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCProtocol.Test", "MCProtocol.Test\MCProtocol.Test.csproj", "{EE6352C8-8F2C-461B-9B04-B58485A36CC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCProtocol", "MCProtocol\MCProtocol.csproj", "{C8F1B872-C152-45B8-862E-D4CD7EE2C31A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE6352C8-8F2C-461B-9B04-B58485A36CC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE6352C8-8F2C-461B-9B04-B58485A36CC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE6352C8-8F2C-461B-9B04-B58485A36CC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE6352C8-8F2C-461B-9B04-B58485A36CC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8F1B872-C152-45B8-862E-D4CD7EE2C31A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8F1B872-C152-45B8-862E-D4CD7EE2C31A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8F1B872-C152-45B8-862E-D4CD7EE2C31A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8F1B872-C152-45B8-862E-D4CD7EE2C31A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9978A411-2F45-4846-ACCC-C0C87048DB8B}
+	EndGlobalSection
+EndGlobal
